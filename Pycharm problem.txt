@@ -1,0 +1,36 @@
+
+package javalab;
+
+import java.util.Scanner;
+
+
+public class JavaLab {
+
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        System.out.println(" Enter the value :");
+        float i;
+        String day1;
+        i=sc.nextFloat();
+        if(i==0){
+          day1="Saturday";
+          System.out.println(" Just Amazing:"+day1);
+        }
+        else if(i>5.2f){
+            day1="Sunday";
+            System.out.println(" Not.."+day1);
+            
+        }
+        else if(i<6.7f){
+            day1="Monday";
+            System.out.println(" Yeah "+day1);
+        }
+        else{
+            day1="Thursday";
+            System.out.println(" Oh no "+day1);
+        }
+        System.out.println(" I think if else working ");
+    }
+    
+}
